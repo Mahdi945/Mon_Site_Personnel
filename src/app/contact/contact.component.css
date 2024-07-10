@@ -1,0 +1,64 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.contact-info {
+    width: 60%;
+    min-height: 60%;
+    background-color: #ffffff; /* Couleur de fond pour le rectangle */
+    border: 2px solid #30D5C8; /* Bordure solide avec une couleur vert vif */
+    border-radius: 0; /* Bordures droites */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour un effet de profondeur */
+    padding: 20px; /* Espacement intérieur pour que le texte ne touche pas directement les bords */
+    margin: auto; /* Centrer le rectangle dans le conteneur */
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    flex-direction: column; /* Organiser le contenu verticalement */
+    justify-content: center; /* Centrer le contenu verticalement */
+    align-items: center; /* Centrer le contenu horizontalement */
+    text-align: center; /* Centrer le texte */
+    margin-top: 30px; /* Déplacer le rectangle vers le haut */
+}
+
+.contact-info ul {
+    list-style-type: none; /* Enlever les points */
+    padding: 0; /* Enlever le padding par défaut des ul */
+}
+
+.contact-info li {
+    margin-bottom: 10px; /* Ajouter de la marge en bas de chaque li pour un meilleur espacement */
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.contact-info a {
+    color: #0077b5; /* Couleur des liens */
+    text-decoration: none; /* Enlever le soulignement des liens */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+}
+
+.social-links a {
+    font-size: 30px; /* Taille augmentée des icônes */
+    color: #0077b5; /* Couleur des icônes, ajustez selon vos besoins */
+    margin: 0 10px; /* Espacement autour des icônes */
+}
+
+.social-links a:hover {
+    color: #30D5C8; /* Couleur au survol, vert vif pour correspondre au cadre */
+}

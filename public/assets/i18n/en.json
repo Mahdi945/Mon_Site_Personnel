@@ -1,0 +1,23 @@
+{
+    "NAVBAR": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "CONTACT": "Contact",
+      "LANGUAGES": "Languages",
+      "FRENCH": "French",
+      "ENGLISH": "English",
+      "ARABIC": "Arabic"
+    },
+    "HOME": {
+      "TITLE": "Hi, I'm Mahdi Bey",
+      "DESCRIPTION": "I'm a second-year student in web and mobile development. I have a passion for learning new things every day. I'm always eager to expand my knowledge and skills."
+    },
+    "CONTACT": {
+        "TITLE": "Contact Information",
+        "DESCRIPTION": "Feel free to contact us!",
+        "EMAIL": "Email: Mahdibeyy@gmail.com",
+        "PHONE": "Phone: (+216) 56 327 280",
+        "ADDRESS": "Address: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunisia"
+      }
+  }
+  

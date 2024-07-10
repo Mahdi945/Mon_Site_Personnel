@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/remove.png" alt="Logo" class="logo-image">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">{{ 'NAVBAR.HOME' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active">{{ 'NAVBAR.ABOUT' | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active">{{ 'NAVBAR.CONTACT' | translate }}</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{ 'NAVBAR.LANGUAGES' | translate }}
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="changeLanguage('en')">{{ 'NAVBAR.ENGLISH' | translate }}</a></li>
+          <li><a class="dropdown-item" (click)="changeLanguage('fr')">{{ 'NAVBAR.FRENCH' | translate }}</a></li>
+          <li><a class="dropdown-item" (click)="changeLanguage('ar')">{{ 'NAVBAR.ARABIC' | translate }}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

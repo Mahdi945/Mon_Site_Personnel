@@ -1,0 +1,50 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .about-image {
+    border: 3px solid white; /* Border slightly thicker for more emphasis */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow for attractiveness */
+    margin-bottom: 20px;
+    max-width: 30%; /* Increased width for more prominence */
+    max-height: auto; /* Adjust height proportionally */
+    cursor: pointer; /* Add cursor pointer for interaction */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .about-image img {
+    display: block;
+    width: 100%; /* Adjust width to fill the container */
+    height: auto; /* Adjust height proportionally */
+    transition: width 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .about-linkedin a {
+    font-size: 37px; /* Increase icon size for visibility */
+    color: #0077b5; /* LinkedIn blue color */
+    text-decoration: none;
+  }
+  
+  .about-linkedin a:hover {
+    color: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6); /* Adjust the scale value to control the size of the image */
+    width: 80%; /* Adjust the width of the overlay */
+    max-width: 800px; /* Set a maximum width if needed */
+    z-index: 9999;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); /* More pronounced shadow for the enlarged image */
+    transition: transform 0.3s ease; /* Smooth transition for the enlargement effect */
+  }
+  

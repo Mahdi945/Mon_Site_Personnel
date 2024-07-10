@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+    background-color: #30D5C8; /* Bleu turquoise vif */
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    transition: background-color 0.5s ease; /* Transition douce pour le fond */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 15px;
+    color: #FFFFFF; /* Texte blanc pour contraste */
+    font-weight: 600; /* Poppins semi-bold */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #30D5C8; /* Couleur de fond au survol */
+    background-color: #FFFFFF; /* Texte turquoise sur fond blanc */
+    transform: scale(1.05); /* Légère augmentation de taille */
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    right: 0;
+    left: auto;
+    background-color: #30D5C8; /* Turquoise foncé pour le menu déroulant */
+    border: none; /* Supprime les bordures par défaut */
+    transition: background-color 0.3s ease; /* Transition douce pour le fond */
+}
+
+.navbar-nav .nav-item .dropdown-item {
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+    background-color: #1E8D89; /* Turquoise encore plus foncé au survol */
+}
+
+.logo-image {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease; /* Animation douce pour le logo */
+}
+
+.logo-image:hover {
+    transform: scale(1.1); /* Légère augmentation de taille au survol */
+}
