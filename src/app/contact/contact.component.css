@@ -9,19 +9,29 @@
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f9f9f9;
+    animation: fadeIn 2s ease-out; /* Animation pour le conteneur */
 }
 
 .contact-info {
     width: 60%;
     min-height: 60%;
     background-color: #ffffff; /* Couleur de fond pour le rectangle */
-    border: 2px solid #30D5C8; /* Bordure solide avec une couleur vert vif */
+    border: 2px solid #30D5C8; /* Bordure solide avec une couleur turquoise */
     border-radius: 0; /* Bordures droites */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour un effet de profondeur */
     padding: 20px; /* Espacement intérieur pour que le texte ne touche pas directement les bords */
@@ -32,16 +42,27 @@
     align-items: center; /* Centrer le contenu horizontalement */
     text-align: center; /* Centrer le texte */
     margin-top: 30px; /* Déplacer le rectangle vers le haut */
+    animation: fadeInUp 1.5s ease-out; /* Animation pour le conteneur de contact */
+}
+
+.contact-info h2 {
+    animation: fadeInUp 1s ease-out; /* Animation pour le titre */
+}
+
+.contact-info p {
+    animation: fadeInUp 1.2s ease-out; /* Animation pour la description */
 }
 
 .contact-info ul {
     list-style-type: none; /* Enlever les points */
     padding: 0; /* Enlever le padding par défaut des ul */
+    animation: fadeInUp 1.4s ease-out; /* Animation pour la liste */
 }
 
 .contact-info li {
     margin-bottom: 10px; /* Ajouter de la marge en bas de chaque li pour un meilleur espacement */
     text-align: left; /* Aligner le texte à gauche */
+    animation: fadeInUp 1.6s ease-out; /* Animation pour chaque élément de la liste */
 }
 
 .contact-info a {
@@ -53,6 +74,11 @@
     text-decoration: underline; /* Souligner les liens au survol */
 }
 
+.social-links {
+    margin-top: 20px; /* Espacement au-dessus des liens sociaux */
+    animation: fadeInUp 1.8s ease-out; /* Animation pour les liens sociaux */
+}
+
 .social-links a {
     font-size: 30px; /* Taille augmentée des icônes */
     color: #0077b5; /* Couleur des icônes, ajustez selon vos besoins */
@@ -60,5 +86,5 @@
 }
 
 .social-links a:hover {
-    color: #30D5C8; /* Couleur au survol, vert vif pour correspondre au cadre */
+    color: #30D5C8; /* Couleur au survol, turquoise vif pour correspondre au cadre */
 }
