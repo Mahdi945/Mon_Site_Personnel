@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavbarComponent {
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('fr');
+    translate.setDefaultLang('en');
   }
 
   changeLanguage(lang: string) {
