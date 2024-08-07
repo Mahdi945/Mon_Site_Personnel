@@ -7,9 +7,9 @@
     background-color: #f9f9f9;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  .about-image {
+}
+
+.about-image {
     border: 3px solid white; /* Border slightly thicker for more emphasis */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow for attractiveness */
     margin-bottom: 20px;
@@ -17,26 +17,26 @@
     max-height: auto; /* Adjust height proportionally */
     cursor: pointer; /* Add cursor pointer for interaction */
     transition: transform 0.3s ease; /* Smooth transition for scaling */
-  }
-  
-  .about-image img {
+}
+
+.about-image img {
     display: block;
     width: 100%; /* Adjust width to fill the container */
     height: auto; /* Adjust height proportionally */
     transition: width 0.3s ease; /* Smooth transition for scaling */
-  }
-  
-  .about-linkedin a {
+}
+
+.about-linkedin a {
     font-size: 37px; /* Increase icon size for visibility */
     color: #0077b5; /* LinkedIn blue color */
     text-decoration: none;
-  }
-  
-  .about-linkedin a:hover {
+}
+
+.about-linkedin a:hover {
     color: #005582; /* Darker LinkedIn blue on hover */
-  }
-  
-  .expanded {
+}
+
+.expanded {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -46,5 +46,25 @@
     z-index: 9999;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); /* More pronounced shadow for the enlarged image */
     transition: transform 0.3s ease; /* Smooth transition for the enlargement effect */
-  }
-  
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-image {
+        max-width: 50%; /* Adjust width for medium screens */
+    }
+
+    .expanded {
+        width: 90%; /* Adjust width of the overlay for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image {
+        max-width: 70%; /* Adjust width for small screens */
+    }
+
+    .expanded {
+        width: 95%; /* Adjust width of the overlay for small screens */
+    }
+}
