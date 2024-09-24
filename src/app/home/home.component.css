@@ -107,3 +107,29 @@
       font-size: 1.2rem;
   }
 }
+.resume-button {
+  margin-top: 20px;
+}
+
+.btn-resume {
+  background-color: #30D5C8; /* Bleu attractif */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #30D5C8; /* Changement de couleur au survol */
+  transform: scale(1.05); /* Agrandissement léger au survol */
+}
+
+.btn-resume:active {
+  background-color: #30D5C8;
+  transform: scale(1); /* Reset de l'agrandissement lors du clic */
+}
+

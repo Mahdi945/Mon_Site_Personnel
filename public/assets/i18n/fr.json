@@ -10,7 +10,8 @@
     },
     "HOME": {
       "TITLE": "Salut, je suis Mahdi Bey",
-      "DESCRIPTION": "Je suis un étudiant en troixème année en développement web et mobile. J'ai une passion pour apprendre de nouvelles choses chaque jour. Je suis toujours désireux d'élargir mes connaissances et mes compétences."
+      "DESCRIPTION": "Je suis un étudiant en troixème année en développement web et mobile. J'ai une passion pour apprendre de nouvelles choses chaque jour. Je suis toujours désireux d'élargir mes connaissances et mes compétences.",
+      "CV": "Telecharger CV"   
     },
     "CONTACT": {
         "TITLE": "Informations de contact",

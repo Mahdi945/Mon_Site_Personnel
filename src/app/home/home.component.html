@@ -2,6 +2,13 @@
   <div class="text-container">
     <h1>{{ 'HOME.TITLE' | translate }}</h1>
     <p>{{ 'HOME.DESCRIPTION' | translate }}</p>
+    <!-- Ajout du bouton "Get Resume" sous le texte -->
+    <div class="resume-button">
+      
+        <a href="assets/CV.pdf" download="CV.pdf">
+        <button class="btn-resume">{{ 'HOME.CV' | translate }}</button>
+      </a>
+    </div>
   </div>
   <div class="image-container">
     <img src="assets/images/mp.jpg" alt="Mahdi Bey">
