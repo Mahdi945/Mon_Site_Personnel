@@ -8,10 +8,15 @@
       "ENGLISH": "English",
       "ARABIC": "Arabic"
     },
+
     "HOME": {
       "TITLE": "Hi, I'm Mahdi Bey",
       "DESCRIPTION": "I'm a third-year student in web and mobile development. I have a passion for learning new things every day. I'm always eager to expand my knowledge and skills.",
       "CV": "GET RESUME"
+    },
+    "ABOUT": {
+      "project":"My Projects"
+      
     },
     "CONTACT": {
         "TITLE": "Contact Information",

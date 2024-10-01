@@ -88,3 +88,44 @@
 .social-links a:hover {
     color: #30D5C8; /* Couleur au survol, turquoise vif pour correspondre au cadre */
 }
+/* contact.component.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
