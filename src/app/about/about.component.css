@@ -19,28 +19,45 @@ html, body {
 .animated-title {
   font-size: 2.5rem;
   margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif; /* Police élégante */
+  font-weight: 700; /* Poids de la police */
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 2px; /* Espacement des lettres */
+  color: #333; /* Couleur du texte */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-transform: uppercase;
-  border-right: 2px solid #30D5C8;
-  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+  display: inline-block;
+  animation: fadeInUp 1s ease-out, glow 1.5s infinite alternate;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+/* Animation de montée */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes blink {
-  from, to { border-color: transparent; }
-  50% { border-color: #30D5C8; }
+/* Animation de lueur */
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px #30D5C8, 0 0 20px #30D5C8, 0 0 30px #30D5C8;
+  }
+  to {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 20px #30D5C8, 0 0 30px #30D5C8, 0 0 40px #30D5C8;
+  }
 }
 
-.project-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+/* Grille des projets */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Boîte de projet */
@@ -73,6 +90,7 @@ html, body {
   height: 50%; /* Ajuster la hauteur de l'image */
   border-radius: 10px;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  margin-bottom: 10px; /* Ajouter un espace entre l'image et le titre */
 }
 
 /* Effet au survol de l'image */
@@ -90,9 +108,21 @@ html, body {
 
 /* Titre du projet */
 .project-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #333; /* Couleur du texte noir */
   margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif; /* Police élégante */
+  font-weight: 600; /* Poids de la police */
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 1px; /* Espacement des lettres */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transition pour les effets */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+/* Effet au survol du titre */
+.project-info h3:hover {
+  color: #30D5C8; /* Changement de couleur au survol */
+  transform: scale(1.1); /* Agrandir légèrement au survol */
 }
 
 /* Icônes des langages utilisés */
@@ -126,6 +156,16 @@ html, body {
 /* Affiche les icônes au survol */
 .project-box:hover .project-languages {
   opacity: 1; /* Rendre visible au survol */
+}
+
+/* Enlever le soulignement bleu des liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #30D5C8; /* Changement de couleur au survol */
 }
 
 /* Adaptabilité mobile */
