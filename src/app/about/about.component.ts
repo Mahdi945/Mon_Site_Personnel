@@ -23,6 +23,7 @@ export class AboutComponent {
       name: 'Maryouli E-commerce',
       description: 'Site de vente de maillots de football, développé avec Symfony et Twig.',
       image: 'assets/maryouli.png',
+      link: 'https://github.com/Mahdi945/Maryouli-Symfony-',
       languages: [
         { name: 'Symfony', iconClass: 'fab fa-symfony' },
         { name: 'Twig', iconClass: 'fas fa-leaf' }, 
@@ -34,6 +35,7 @@ export class AboutComponent {
       name: 'ISET Rades PFE',
       description: 'Site pour la gestion des sujets de PFE de l’ISET Rades, développé en PHP.',
       image: 'assets/iset.png',
+      link: 'https://github.com/Mahdi945/projet_integration',
       languages: [
         { name: 'PHP', iconClass: 'fab fa-php' },
         { name: 'MySQL', iconClass: 'fas fa-database' },
