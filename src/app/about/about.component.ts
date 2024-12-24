@@ -32,6 +32,18 @@ export class AboutComponent {
       
     },
     {
+      name: 'Site Web 3awen',
+      description: '3awen est une plateforme collaborative qui facilite l organisation et la participation à des événements de volontariat pour promouvoir l entraide et la solidarité.',
+      image: 'assets/image3.JPG',
+      link: 'https://3awen.vercel.app/accueil',
+      languages: [
+        { name: 'Angular', iconClass: 'fab fa-angular' },
+        { name: 'Node.js', iconClass: 'fab fa-node-js' },
+        { name: 'MongoDB', iconClass: 'fas fa-database' }
+      ],
+      
+    },
+    {
       name: 'ISET Rades PFE',
       description: 'Site pour la gestion des sujets de PFE de l’ISET Rades, développé en PHP.',
       image: 'assets/iset.png',
@@ -43,5 +55,6 @@ export class AboutComponent {
       ],
       
     }
+   
   ];
 }

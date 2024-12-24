@@ -52,13 +52,17 @@ html, body {
   }
 }
 
-/* Grille des projets */
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+  grid-auto-rows: auto; /* Hauteur automatique */
+  gap: 20px; /* Espacement entre les boîtes */
 }
+
+.project-box:nth-child(4n + 4) {
+  grid-column: 1 / span 1; /* Place la 4ème boîte sous la 1ère */
+}
+
 
 /* Boîte de projet */
 .project-box {
