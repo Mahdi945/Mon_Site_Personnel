@@ -1,0 +1,27 @@
+{
+    "NAVBAR": {
+      "HOME": "Startseite",
+      "ABOUT": "Über uns",
+      "CONTACT": "Kontakt",
+      "LANGUAGES": "Sprachen",
+      "FRENCH": "Französisch",
+      "ENGLISH": "Englisch",
+      "ARABIC": "Arabisch",
+      "GERMAN": "Deutsch"
+    },
+    "HOME": {
+      "TITLE": "Hallo, ich bin Mahdi Bey",
+      "DESCRIPTION": "Ich besitze ein nationales Diplom in Informationssystementwicklung und bin vielseitig. Ich kann in jedem Entwicklungsbereich arbeiten: Webentwicklung, Datenbankmanagement und Systemdesign. Ich habe eine Leidenschaft dafür, jeden Tag neue Dinge zu lernen und bin immer bestrebt, mein Wissen und meine Fähigkeiten zu erweitern.",
+      "CV": "LEBENSLAUF HERUNTERLADEN"
+    },
+    "ABOUT": {
+      "project": "Meine Projekte"
+    },
+    "CONTACT": {
+        "TITLE": "Kontaktinformationen",
+        "DESCRIPTION": "Zögern Sie nicht, uns zu kontaktieren!",
+        "EMAIL": "E-Mail: Mahdibeyy@gmail.com",
+        "PHONE": "Telefon: (+216) 56 327 280",
+        "ADDRESS": "Adresse: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunesien"
+    }
+}

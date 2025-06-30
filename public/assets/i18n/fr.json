@@ -6,16 +6,16 @@
       "LANGUAGES": "Langues",
       "FRENCH": "Français",
       "ENGLISH": "Anglais",
-      "ARABIC": "العربية"
+      "ARABIC": "العربية",
+      "GERMAN": "Allemand"
     },
     "HOME": {
       "TITLE": "Salut, je suis Mahdi Bey",
-      "DESCRIPTION": "Je suis un étudiant en troixème année en développement web et mobile. J'ai une passion pour apprendre de nouvelles choses chaque jour. Je suis toujours désireux d'élargir mes connaissances et mes compétences.",
+      "DESCRIPTION": "Je détiens un diplôme national en Développement de Systèmes d'Information et je suis polyvalent. Je peux travailler dans n'importe quel domaine de développement : développement web, gestion de base de données, et conception de systèmes. J'ai une passion pour apprendre de nouvelles choses chaque jour et je suis toujours désireux d'élargir mes connaissances et mes compétences.",
       "CV": "Telecharger CV"   
     },
     "ABOUT": {
       "project":"mes projets"
-      
     },
     "CONTACT": {
         "TITLE": "Informations de contact",
@@ -23,6 +23,6 @@
         "EMAIL": "Email: Mahdibeyy@gmail.com",
         "PHONE": "Téléphone: (+216) 56 327 280",
         "ADDRESS": "Adresse: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunisie"
-      }
-  }
-  
+    }
+}
+

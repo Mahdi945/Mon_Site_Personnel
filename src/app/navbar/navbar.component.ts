@@ -15,4 +15,14 @@ export class NavbarComponent {
   changeLanguage(lang: string) {
     this.translate.use(lang);
   }
+
+  // Add method to get available languages
+  getAvailableLanguages() {
+    return [
+      { code: 'en', name: 'NAVBAR.ENGLISH' },
+      { code: 'fr', name: 'NAVBAR.FRENCH' },
+      { code: 'ar', name: 'NAVBAR.ARABIC' },
+      { code: 'de', name: 'NAVBAR.GERMAN' }
+    ];
+  }
 }

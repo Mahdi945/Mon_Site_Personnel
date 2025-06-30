@@ -54,7 +54,17 @@ export class AboutComponent {
         { name: 'HTML/CSS', iconClass: 'fab fa-html5' }
       ],
       
+    },
+    {
+      name: 'Carbotack',
+      description: 'Système de gestion complete de station service , développé avec Angular, Node.js, et MySQL.',
+      image: 'assets/dashboard.JPG',
+      link: 'https://github.com/Mahdi945/PFE_Frontend',
+      languages: [
+        { name: 'Angular', iconClass: 'fab fa-angular' },
+        { name: 'Node.js', iconClass: 'fab fa-node-js' },
+        { name: 'MySQL', iconClass: 'fas fa-database' }
+      ],
     }
-   
   ];
 }
