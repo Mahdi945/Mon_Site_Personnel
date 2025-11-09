@@ -144,7 +144,7 @@ body.dark-mode .about-container {
   color: #ffffff;
 }
 
-/* Animation du titre */
+/* Animation du titre avec effet glow */
 .animated-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -182,64 +182,11 @@ body.dark-mode .about-container {
   }
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-/* Boîte de projet */
-.project-box {
-  display: flex;
-  flex-direction: column;
-  height: 280px;
-  padding: 15px;
-  border: 2px solid var(--primary-color, #30D5C8);
-  border-radius: 15px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
-  cursor: pointer;
-  background-color: var(--card-bg, #ffffff);
-  box-shadow: 0 6px 10px var(--shadow, rgba(0, 0, 0, 0.15));
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  animation: slideInUp 0.6s ease forwards;
-  box-sizing: border-box;
-}
-
-/* Animation en cascade pour chaque projet */
-.project-box:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.project-box:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.project-box:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.project-box:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.project-box:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.project-box:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
+/* Animation de glissement vers le haut */
 @keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(50px) scale(0.9);
+    transform: translateY(50px) scale(0.95);
   }
   to {
     opacity: 1;
@@ -247,116 +194,7 @@ body.dark-mode .about-container {
   }
 }
 
-/* Animation alternative pour certains projets (effet de rotation) */
-@keyframes slideInUpRotate {
-  from {
-    opacity: 0;
-    transform: translateY(50px) rotateX(-15deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-  }
-}
-
-/* Appliquer l'animation alternative aux projets pairs */
-.project-box:nth-child(even) {
-  animation-name: slideInUpRotate;
-  perspective: 1000px;
-}
-
-/* Effet au survol des boîtes */
-.project-box:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 30px var(--shadow-hover, rgba(0, 0, 0, 0.3));
-  background-color: var(--primary-color, #30D5C8);
-}
-
-/* Image des projets */
-.project-image img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  margin-bottom: 10px;
-}
-
-/* Effet au survol de l'image */
-.project-box:hover .project-image img {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* Informations du projet */
-.project-info {
-  text-align: center;
-  margin-top: 10px;
-  opacity: 1;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Titre du projet */
-.project-info h3 {
-  font-size: 1.3rem;
-  color: var(--text-color, #333);
-  margin-bottom: 5px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  text-shadow: 2px 2px 4px var(--shadow, rgba(0, 0, 0, 0.2));
-}
-
-/* Effet au survol du titre */
-.project-info h3:hover {
-  color: var(--primary-color, #30D5C8);
-  transform: scale(1.1);
-}
-
-.project-box:hover .project-info h3 {
-  color: #ffffff;
-}
-
-/* Icônes des langages utilisés */
-.project-languages {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(48, 213, 200, 0.95);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  border-radius: 15px;
-}
-
-.project-languages i {
-  font-size: 2.5rem;
-  margin: 0 15px;
-  color: #fff;
-  transition: color 0.5s ease, transform 0.5s ease;
-}
-
-/* Effet au survol des icônes des langages */
-.project-languages i:hover {
-  color: #f1c40f;
-  transform: scale(1.3);
-}
-
-/* Affiche les icônes au survol */
-.project-box:hover .project-languages {
-  opacity: 1;
-}
-
-/* Enlever le soulignement bleu des liens */
+/* Liens généraux */
 a {
   text-decoration: none;
   color: inherit;
@@ -366,7 +204,106 @@ a:hover {
   color: var(--primary-color, #30D5C8);
 }
 
-/* Adaptabilité pour tablettes */
+/* ============================================
+   SECTION GITHUB - APRÈS LES PROJETS
+   ============================================ */
+
+.github-section {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.github-text {
+  font-size: 1.3rem;
+  color: var(--text-color, #333);
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #30D5C8 0%, #1E8D89 100%);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(48, 213, 200, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.github-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(48, 213, 200, 0.5);
+  background: linear-gradient(135deg, #45e5d7 0%, #30D5C8 100%);
+}
+
+.github-button i {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.github-button:hover i {
+  transform: rotate(360deg);
+}
+
+/* Responsive - GitHub Section */
+@media (max-width: 768px) {
+  .github-section {
+    margin-top: 50px;
+    padding: 30px 15px;
+  }
+
+  .github-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .github-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    gap: 10px;
+  }
+
+  .github-button i {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .github-section {
+    margin-top: 40px;
+    padding: 25px 10px;
+  }
+
+  .github-text {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .github-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    gap: 8px;
+    letter-spacing: 1px;
+  }
+
+  .github-button i {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive - Tablettes */
 @media (max-width: 1024px) {
   .about-container {
     padding: 30px 15px;
@@ -389,18 +326,9 @@ a:hover {
   .skill-item span {
     font-size: 0.9rem;
   }
-
-  .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-  }
-
-  .project-box {
-    height: 260px;
-  }
 }
 
-/* Adaptabilité mobile */
+/* Responsive - Mobiles */
 @media (max-width: 768px) {
   .about-container {
     padding: 20px 10px;
@@ -434,48 +362,15 @@ a:hover {
     font-size: 0.85rem;
   }
 
-  .project-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    max-width: 100%;
-    margin: 0;
-    width: 100%;
-  }
-
-  .project-box {
-    height: 300px;
-    max-width: calc(100% - 40px);
-    width: calc(100% - 40px);
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .project-image img {
-    height: 160px;
-  }
-
-  .project-info h3 {
-    font-size: 1.1rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    padding: 0 5px;
-  }
-
-  .project-languages i {
-    font-size: 2rem;
-    margin: 0 10px;
+  .skills-track {
+    animation: scroll 25s linear infinite;
   }
 }
 
-/* Adaptabilité petits mobiles */
+/* Responsive - Petits mobiles */
 @media (max-width: 480px) {
   .about-container {
     padding: 15px 10px;
-    width: 100%;
-    overflow-x: hidden;
   }
 
   .skills-title,
@@ -498,233 +393,297 @@ a:hover {
   .skill-item span {
     font-size: 0.75rem;
   }
-
-  .project-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    gap: 15px;
-    margin: 0;
-  }
-
-  .project-box {
-     height: 340px;
-     padding: 12px;
-    max-width: calc(100% - 30px);
-    width: calc(100% - 30px);
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .project-image img {
-    height: 140px;
-  }
-
-  .project-info h3 {
-    font-size: 1rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    padding: 0 5px;
-  }
-
-  .project-languages i {
-    font-size: 1.8rem;
-    margin: 0 8px;
-  }
 }
 
-/* Animation pour les petits écrans */
-@media (max-width: 768px) {
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
+/* ============================================
+   SECTION PROJETS - STYLE MODERNE ET RESPONSIVE
+   ============================================ */
 
-  .skills-track {
-    animation: scroll 25s linear infinite;
-  }
-}
-
-/* Animation du titre */
-.animated-title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif; /* Police élégante */
-  font-weight: 700; /* Poids de la police */
-  text-transform: uppercase; /* Texte en majuscules */
-  letter-spacing: 2px; /* Espacement des lettres */
-  color: #333; /* Couleur du texte */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
-  position: relative;
-  display: inline-block;
-  animation: fadeInUp 1s ease-out, glow 1.5s infinite alternate;
-}
-
-/* Animation de montée */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation de lueur */
-@keyframes glow {
-  from {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px #30D5C8, 0 0 20px #30D5C8, 0 0 30px #30D5C8;
-  }
-  to {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 20px #30D5C8, 0 0 30px #30D5C8, 0 0 40px #30D5C8;
-  }
-}
-
+/* Grille des projets - Design responsive moderne */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
-  grid-auto-rows: auto; /* Hauteur automatique */
-  gap: 20px; /* Espacement entre les boîtes */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.project-box:nth-child(4n + 4) {
-  grid-column: 1 / span 1; /* Place la 4ème boîte sous la 1ère */
-}
-
-
-/* Boîte de projet */
+/* Carte de projet - Style moderne */
 .project-box {
-  display: inline-block;
-  width: 350px; /* Augmenter la largeur */
-  height: 250px; /* Réduire la hauteur */
-  margin: 20px;
-  padding: 15px;
-  border: 2px solid #30D5C8;
-  border-radius: 15px; /* Coins arrondis */
-  transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg, #ffffff);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px var(--shadow, rgba(0, 0, 0, 0.1));
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  background-color: #ffffff; /* Fond blanc pour un meilleur contraste */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  position: relative; /* Pour le positionnement des détails */
-  overflow: hidden; /* Pour masquer les éléments débordants */
+  position: relative;
+  border: 2px solid transparent;
+  height: 100%;
+  min-height: 380px;
+  opacity: 0;
+  animation: slideInUp 0.6s ease forwards;
 }
 
-/* Effet au survol des boîtes */
+/* Animation en cascade */
+.project-box:nth-child(1) { animation-delay: 0.1s; }
+.project-box:nth-child(2) { animation-delay: 0.2s; }
+.project-box:nth-child(3) { animation-delay: 0.3s; }
+.project-box:nth-child(4) { animation-delay: 0.4s; }
+.project-box:nth-child(5) { animation-delay: 0.5s; }
+.project-box:nth-child(6) { animation-delay: 0.6s; }
+
+/* Effet hover sur la carte */
 .project-box:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background-color: #30D5C8;
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px var(--shadow-hover, rgba(48, 213, 200, 0.3));
+  border-color: var(--primary-color, #30D5C8);
 }
 
-/* Image des projets */
+/* Conteneur de l'image */
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .project-image img {
   width: 100%;
-  height: 50%; /* Ajuster la hauteur de l'image */
-  border-radius: 10px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  margin-bottom: 10px; /* Ajouter un espace entre l'image et le titre */
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Effet au survol de l'image */
 .project-box:hover .project-image img {
-  transform: scale(1.05);
-  opacity: 0.9;
+  transform: scale(1.1);
 }
 
-/* Informations du projet */
-.project-info {
-  text-align: center;
-  margin-top: 10px;
-  opacity: 1;
-}
-
-/* Titre du projet */
-.project-info h3 {
-  font-size: 1.5rem;
-  color: #333; /* Couleur du texte noir */
-  margin-bottom: 5px;
-  font-family: 'Poppins', sans-serif; /* Police élégante */
-  font-weight: 600; /* Poids de la police */
-  text-transform: uppercase; /* Texte en majuscules */
-  letter-spacing: 1px; /* Espacement des lettres */
-  transition: color 0.3s ease, transform 0.3s ease; /* Transition pour les effets */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
-}
-
-/* Effet au survol du titre */
-.project-info h3:hover {
-  color: #30D5C8; /* Changement de couleur au survol */
-  transform: scale(1.1); /* Agrandir légèrement au survol */
-}
-
-/* Icônes des langages utilisés */
+/* Overlay des langages - Apparaît au hover */
 .project-languages {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(48, 213, 200, 0.9); /* Couleur de fond semi-transparente */
-  opacity: 0; /* Masqué par défaut */
-  transition: opacity 0.5s ease; /* Transition d'opacité */
+  gap: 15px;
+  background: linear-gradient(135deg, rgba(48, 213, 200, 0.95), rgba(30, 141, 137, 0.95));
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.project-box:hover .project-languages {
+  opacity: 1;
 }
 
 .project-languages i {
-  font-size: 2rem; /* Taille des icônes */
-  margin: 0 10px;
-  color: #fff;
-  transition: color 0.5s ease, transform 0.5s ease;
+  font-size: 2.8rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  animation: bounceIn 0.6s ease;
 }
 
-/* Effet au survol des icônes des langages */
 .project-languages i:hover {
-  color: #f1c40f;
-  transform: scale(1.3);
+  transform: scale(1.3) rotate(10deg);
+  color: #ffd700;
 }
 
-/* Affiche les icônes au survol */
-.project-box:hover .project-languages {
-  opacity: 1; /* Rendre visible au survol */
+@keyframes bounceIn {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
 }
 
-/* Enlever le soulignement bleu des liens */
-a {
+/* Informations du projet */
+.project-info {
+  padding: 25px 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--card-bg, #ffffff);
+  transition: background-color 0.3s ease;
+}
+
+/* Titre du projet - Toujours visible et lisible */
+.project-info h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color, #2c3e50);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 4px var(--shadow, rgba(0, 0, 0, 0.05));
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-box:hover .project-info h3 {
+  color: var(--primary-color, #30D5C8);
+  transform: scale(1.05);
+  text-shadow: 0 4px 8px var(--shadow-hover, rgba(48, 213, 200, 0.3));
+}
+
+/* Lien sans style */
+.project-link {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-a:hover {
-  color: #30D5C8; /* Changement de couleur au survol */
+/* ============================================
+   MEDIA QUERIES - RESPONSIVE
+   ============================================ */
+
+/* Tablettes et grands mobiles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 15px;
+  }
+
+  .project-box {
+    min-height: 360px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+    min-height: 50px;
+  }
+
+  .project-languages i {
+    font-size: 2.5rem;
+    gap: 12px;
+  }
 }
 
-/* Adaptabilité mobile */
+/* Mobiles (481px - 768px) */
 @media (max-width: 768px) {
   .project-grid {
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur petit écran */
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 15px 20px;
+    max-width: 600px;
   }
 
   .project-box {
-    height: 200px; /* Ajuste la hauteur sur petit écran */
+    min-height: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-info {
+    padding: 20px 15px;
+  }
+
+  .project-info h3 {
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    min-height: 48px;
+    padding: 0 8px;
+  }
+
+  .project-languages i {
+    font-size: 2.3rem;
+    gap: 10px;
   }
 }
 
+/* Petits mobiles (< 480px) */
 @media (max-width: 480px) {
   .project-grid {
-    grid-template-columns: 1fr; /* Une colonne sur très petit écran */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px 15px;
   }
 
   .project-box {
-    width: 100%; /* Prend la pleine largeur sur petit écran */
+    min-height: 320px;
+    border-radius: 16px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project-info {
+    padding: 18px 12px;
+  }
+
+  .project-info h3 {
+    font-size: 1.05rem;
+    letter-spacing: 0.8px;
+    min-height: 45px;
+    padding: 0 5px;
+    line-height: 1.3;
+  }
+
+  .project-languages {
+    gap: 10px;
+  }
+
+  .project-languages i {
+    font-size: 2rem;
+  }
+
+  .project-box:hover {
+    transform: translateY(-8px);
+  }
+}
+
+/* Très petits mobiles (< 360px) */
+@media (max-width: 360px) {
+  .project-grid {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .project-box {
+    min-height: 300px;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-info h3 {
+    font-size: 0.95rem;
+    min-height: 42px;
+  }
+
+  .project-languages i {
+    font-size: 1.8rem;
+    gap: 8px;
   }
 }

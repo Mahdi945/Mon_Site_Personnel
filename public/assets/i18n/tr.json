@@ -1,0 +1,37 @@
+{
+    "NAVBAR": {
+      "HOME": "Ana Sayfa",
+      "ABOUT": "Hakkında",
+      "CONTACT": "İletişim",
+      "LANGUAGES": "Diller",
+      "FRENCH": "Fransızca",
+      "ENGLISH": "İngilizce",
+      "ARABIC": "Arapça",
+      "GERMAN": "Almanca",
+      "TURKISH": "Türkçe",
+      "SPANISH": "İspanyolca",
+      "DARK_MODE": "Karanlık Mod",
+      "LIGHT_MODE": "Aydınlık Mod"
+    },
+    "HOME": {
+      "TITLE": "Merhaba, ben Mahdi Bey",
+      "DESCRIPTION": "Bilgi Sistemleri Geliştirme alanında ulusal diplomaya sahibim ve çok yönlüyüm. Her türlü geliştirme alanında çalışabilirim: web geliştirme, veritabanı yönetimi ve sistem tasarımı. Her gün yeni şeyler öğrenme tutkum var ve bilgimi ve becerilerimi genişletmeye her zaman hevesliyim.",
+      "CV": "ÖZGEÇMİŞİ İNDİR"
+    },
+    "ABOUT": {
+      "skills": "Becerilerim",
+      "project": "Projelerim",
+      "GITHUB_TEXT": "Tüm projelerimi görmek için GitHub profilimi ziyaret edin",
+      "VISIT_GITHUB": "GitHub'ımı Ziyaret Et"
+    },
+    "CONTACT": {
+        "TITLE": "İletişim Bilgileri",
+        "DESCRIPTION": "Bizimle iletişime geçmekten çekinmeyin!",
+        "EMAIL": "E-posta: Mahdibeyy@gmail.com",
+        "PHONE": "Telefon: (+216) 56 327 280",
+        "ADDRESS": "Adres: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunus",
+        "EMAIL_LABEL": "E-posta:",
+        "PHONE_LABEL": "Telefon:",
+        "ADDRESS_LABEL": "Adres:"
+    }
+}

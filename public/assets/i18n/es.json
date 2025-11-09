@@ -1,0 +1,37 @@
+{
+    "NAVBAR": {
+      "HOME": "Inicio",
+      "ABOUT": "Acerca de",
+      "CONTACT": "Contacto",
+      "LANGUAGES": "Idiomas",
+      "FRENCH": "Francés",
+      "ENGLISH": "Inglés",
+      "ARABIC": "Árabe",
+      "GERMAN": "Alemán",
+      "TURKISH": "Turco",
+      "SPANISH": "Español",
+      "DARK_MODE": "Modo Oscuro",
+      "LIGHT_MODE": "Modo Claro"
+    },
+    "HOME": {
+      "TITLE": "Hola, soy Mahdi Bey",
+      "DESCRIPTION": "Tengo un diploma nacional en Desarrollo de Sistemas de Información y soy versátil. Puedo trabajar en cualquier campo de desarrollo: desarrollo web, gestión de bases de datos y diseño de sistemas. Tengo pasión por aprender cosas nuevas cada día y siempre estoy ansioso por ampliar mis conocimientos y habilidades.",
+      "CV": "DESCARGAR CURRÍCULUM"
+    },
+    "ABOUT": {
+      "skills": "Mis Habilidades",
+      "project": "Mis Proyectos",
+      "GITHUB_TEXT": "Para ver todos mis proyectos, visita mi perfil de GitHub",
+      "VISIT_GITHUB": "Visitar Mi GitHub"
+    },
+    "CONTACT": {
+        "TITLE": "Información de Contacto",
+        "DESCRIPTION": "¡No dudes en contactarnos!",
+        "EMAIL": "Correo electrónico: Mahdibeyy@gmail.com",
+        "PHONE": "Teléfono: (+216) 56 327 280",
+        "ADDRESS": "Dirección: 14 Rue Sokrat, Bir El Bey, Ben Arous, Túnez",
+        "EMAIL_LABEL": "Correo electrónico:",
+        "PHONE_LABEL": "Teléfono:",
+        "ADDRESS_LABEL": "Dirección:"
+    }
+}

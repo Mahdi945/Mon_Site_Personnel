@@ -71,7 +71,9 @@ export class NavbarComponent implements OnInit {
       { code: 'en', name: 'NAVBAR.ENGLISH' },
       { code: 'fr', name: 'NAVBAR.FRENCH' },
       { code: 'ar', name: 'NAVBAR.ARABIC' },
-      { code: 'de', name: 'NAVBAR.GERMAN' }
+      { code: 'de', name: 'NAVBAR.GERMAN' },
+      { code: 'tr', name: 'NAVBAR.TURKISH' },
+      { code: 'es', name: 'NAVBAR.SPANISH' }
     ];
   }
 }

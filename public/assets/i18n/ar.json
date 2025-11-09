@@ -8,6 +8,8 @@
       "ENGLISH": "الإنجليزية",
       "ARABIC": "العربية",
       "GERMAN": "الألمانية",
+      "TURKISH": "التركية",
+      "SPANISH": "الإسبانية",
       "DARK_MODE": "الوضع الداكن",
       "LIGHT_MODE": "الوضع الفاتح"
     },
@@ -18,7 +20,9 @@
     },
     "ABOUT": {
       "skills": "مهاراتي",
-      "project": "مشاريعي"
+      "project": "مشاريعي",
+      "GITHUB_TEXT": "لاستشارة جميع مشاريعي، قم بزيارة ملفي الشخصي على GitHub",
+      "VISIT_GITHUB": "زيارة GitHub الخاص بي"
     },
     "CONTACT": {
         "TITLE": "معلومات الاتصال",

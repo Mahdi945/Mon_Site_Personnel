@@ -8,6 +8,8 @@
       "ENGLISH": "Anglais",
       "ARABIC": "العربية",
       "GERMAN": "Allemand",
+      "TURKISH": "Turc",
+      "SPANISH": "Espagnol",
       "DARK_MODE": "Mode Sombre",
       "LIGHT_MODE": "Mode Clair"
     },
@@ -18,7 +20,9 @@
     },
     "ABOUT": {
       "skills": "Mes Compétences",
-      "project": "Mes Projets"
+      "project": "Mes Projets",
+      "GITHUB_TEXT": "Pour consulter tous mes projets, visitez mon profil GitHub",
+      "VISIT_GITHUB": "Visitez Mon GitHub"
     },
     "CONTACT": {
         "TITLE": "Informations de contact",
