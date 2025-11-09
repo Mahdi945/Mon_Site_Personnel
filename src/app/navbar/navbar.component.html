@@ -16,7 +16,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" (click)="toggleLanguageDropdown($event)">
-          {{ 'NAVBAR.LANGUAGES' | translate }}
+          <i class="fas fa-globe"></i>
         </a>
         <ul class="dropdown-menu" [class.show]="isLanguageDropdownOpen">
           <li><a class="dropdown-item" (click)="changeLanguage('en')">{{ 'NAVBAR.ENGLISH' | translate }}</a></li>
