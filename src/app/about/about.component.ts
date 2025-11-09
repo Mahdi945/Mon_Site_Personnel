@@ -65,6 +65,19 @@ export class AboutComponent {
         { name: 'Node.js', iconClass: 'fab fa-node-js' },
         { name: 'MySQL', iconClass: 'fas fa-database' }
       ],
-    }
+    },
+    {
+  name: 'ERP de Transport & Logistik',
+  description: 'Système ERP complet pour la gestion des opérations de transport et logistique, développé avec Angular, NestJS, PostgreSQL et Keycloak.',
+  image: 'assets/velosi.JPG',
+  link: 'https://velosi-front.vercel.app/',
+  languages: [
+    { name: 'Angular', iconClass: 'fab fa-angular' },
+    { name: 'NestJS', iconClass: 'fas fa-server' },
+    { name: 'PostgreSQL', iconClass: 'fas fa-database' },
+    { name: 'Keycloak', iconClass: 'fas fa-lock' }
+  ],
+}
+
   ];
 }
