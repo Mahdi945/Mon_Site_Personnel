@@ -1,0 +1,46 @@
+<div *ngIf="loading$ | async" class="spinner-overlay">
+  <div class="spinner-container">
+    <!-- Logo animé avec effet de recherche/scan -->
+    <div class="logo-spinner">
+      <div class="logo-wrapper">
+        <img src="assets/images/aahdi.png" alt="Loading..." class="logo-image">
+        <div class="scan-line"></div>
+      </div>
+      
+      <!-- Cercle de progression autour du logo -->
+      <svg class="progress-ring" width="260" height="300">
+        <circle class="progress-ring-circle" 
+                stroke="#30D5C8" 
+                stroke-width="3" 
+                fill="transparent" 
+                r="120" 
+                cx="130" 
+                cy="150"/>
+      </svg>
+      
+      <!-- Particules/étoiles autour du logo -->
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+    
+    <!-- Barre de progression moderne -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+        <div class="progress-glow"></div>
+      </div>
+    </div>
+    
+    <!-- Texte de chargement avec effet -->
+    <div class="loading-text">
+      <h3>Chargement</h3>
+      <div class="loading-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>

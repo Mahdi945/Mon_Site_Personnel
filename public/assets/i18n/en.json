@@ -7,7 +7,9 @@
       "FRENCH": "French",
       "ENGLISH": "English",
       "ARABIC": "Arabic",
-      "GERMAN": "German"
+      "GERMAN": "German",
+      "DARK_MODE": "Dark Mode",
+      "LIGHT_MODE": "Light Mode"
     },
 
     "HOME": {
@@ -16,14 +18,18 @@
       "CV": "GET RESUME"
     },
     "ABOUT": {
-      "project":"My Projects"
+      "skills": "My Skills",
+      "project": "My Projects"
     },
     "CONTACT": {
         "TITLE": "Contact Information",
         "DESCRIPTION": "Feel free to contact us!",
         "EMAIL": "Email: Mahdibeyy@gmail.com",
         "PHONE": "Phone: (+216) 56 327 280",
-        "ADDRESS": "Address: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunisia"
+        "ADDRESS": "Address: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunisia",
+        "EMAIL_LABEL": "Email:",
+        "PHONE_LABEL": "Phone:",
+        "ADDRESS_LABEL": "Address:"
     }
 }
 

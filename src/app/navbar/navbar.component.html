@@ -2,6 +2,7 @@
   <a class="navbar-brand" href="#">
     <img src="assets/images/remove.png" alt="Logo" class="logo-image">
   </a>
+
   <div class="navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -14,16 +15,17 @@
         <a class="nav-link" routerLink="/contact" routerLinkActive="active">{{ 'NAVBAR.CONTACT' | translate }}</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" role="button" (click)="toggleLanguageDropdown($event)">
           {{ 'NAVBAR.LANGUAGES' | translate }}
         </a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" [class.show]="isLanguageDropdownOpen">
           <li><a class="dropdown-item" (click)="changeLanguage('en')">{{ 'NAVBAR.ENGLISH' | translate }}</a></li>
           <li><a class="dropdown-item" (click)="changeLanguage('fr')">{{ 'NAVBAR.FRENCH' | translate }}</a></li>
           <li><a class="dropdown-item" (click)="changeLanguage('ar')">{{ 'NAVBAR.ARABIC' | translate }}</a></li>
           <li><a class="dropdown-item" (click)="changeLanguage('de')">{{ 'NAVBAR.GERMAN' | translate }}</a></li>
         </ul>
       </li>
+   
     </ul>
   </div>
 </nav>

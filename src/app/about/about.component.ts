@@ -6,6 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+  // Skills avec logos
+  skills = [
+    { name: 'Angular', icon: 'fab fa-angular' },
+    { name: 'Symfony', icon: 'fab fa-symfony' },
+    { name: 'PHP', icon: 'fab fa-php' },
+    { name: 'Node.js', icon: 'fab fa-node-js' },
+    { name: 'NestJS', icon: 'fas fa-server' },
+    { name: 'Express', icon: 'fas fa-code' },
+    { name: 'MySQL', icon: 'fas fa-database' },
+    { name: 'MongoDB', icon: 'fas fa-leaf' },
+    { name: 'PostgreSQL', icon: 'fas fa-database' },
+    { name: 'Python', icon: 'fab fa-python' },
+    { name: 'TypeScript', icon: 'fas fa-code' },
+    { name: 'JavaScript', icon: 'fab fa-js' },
+    { name: 'Java', icon: 'fab fa-java' },
+    { name: 'C', icon: 'fas fa-copyright' },
+    { name: 'C#', icon: 'fas fa-hashtag' },
+    { name: 'Cassandra', icon: 'fas fa-database' },
+    { name: 'Jupyter', icon: 'fas fa-book' },
+    { name: 'Android Studio', icon: 'fab fa-android' },
+    { name: 'Kotlin', icon: 'fas fa-mobile-alt' }
+  ];
+
   projects = [
     {
       name: 'CNC Service',
@@ -67,7 +90,7 @@ export class AboutComponent {
       ],
     },
     {
-  name: 'ERP de Transport & Logistik',
+  name: 'ERP Logistique',
   description: 'Système ERP complet pour la gestion des opérations de transport et logistique, développé avec Angular, NestJS, PostgreSQL et Keycloak.',
   image: 'assets/velosi.JPG',
   link: 'https://velosi-front.vercel.app/',

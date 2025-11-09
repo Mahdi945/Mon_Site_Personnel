@@ -7,7 +7,9 @@
       "FRENCH": "Français",
       "ENGLISH": "Anglais",
       "ARABIC": "العربية",
-      "GERMAN": "Allemand"
+      "GERMAN": "Allemand",
+      "DARK_MODE": "Mode Sombre",
+      "LIGHT_MODE": "Mode Clair"
     },
     "HOME": {
       "TITLE": "Salut, je suis Mahdi Bey",
@@ -15,14 +17,18 @@
       "CV": "Telecharger CV"   
     },
     "ABOUT": {
-      "project":"mes projets"
+      "skills": "Mes Compétences",
+      "project": "Mes Projets"
     },
     "CONTACT": {
         "TITLE": "Informations de contact",
         "DESCRIPTION": "N'hésitez pas à nous contacter!",
         "EMAIL": "Email: Mahdibeyy@gmail.com",
         "PHONE": "Téléphone: (+216) 56 327 280",
-        "ADDRESS": "Adresse: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunisie"
+        "ADDRESS": "Adresse: 14 Rue Sokrat, Bir El Bey, Ben Arous, Tunisie",
+        "EMAIL_LABEL": "Email :",
+        "PHONE_LABEL": "Téléphone :",
+        "ADDRESS_LABEL": "Adresse :"
     }
 }
 

@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Variables pour le thème */
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --primary-color: #30D5C8;
+  --secondary-color: #1E8D89;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.3);
+  --navbar-bg: #30D5C8;
+}
+
+/* Mode sombre - Plus élégant et fin */
+body.dark-mode {
+  --bg-color: #1e1e2e;
+  --text-color: #e8e8f0;
+  --card-bg: #2a2a3e;
+  --primary-color: #30D5C8;
+  --secondary-color: #45e5d7;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-hover: rgba(0, 0, 0, 0.5);
+  --navbar-bg: #252535;
+}
+
+/* Styles globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+

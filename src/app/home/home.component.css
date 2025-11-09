@@ -3,135 +3,252 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: var(--bg-color, #f0f0f0);
   padding: 40px;
-  height: 100vh;
-  flex-wrap: nowrap; /* Ne pas passer en colonne */
+  min-height: calc(100vh - 80px);
+  gap: 40px;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode pour home */
+body.dark-mode .home-container {
+  background-color: var(--bg-color, #1e1e2e);
 }
 
 .text-container {
   flex: 1;
   text-align: left;
   padding: 20px;
+  max-width: 600px;
 }
 
 .text-container h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--text-color, #333);
+  margin-bottom: 20px;
+  animation: fadeInLeft 0.8s ease-out;
 }
 
 .text-container p {
   font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  color: var(--text-color, #555);
+  margin-bottom: 30px;
+  animation: fadeInLeft 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .image-container {
   flex: 1;
-  text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
+  max-width: 500px;
+  animation: fadeInRight 0.8s ease-out;
 }
 
 .image-container img {
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   height: auto;
   object-fit: cover;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 5px solid var(--primary-color, #30D5C8);
+  box-shadow: 0 10px 30px var(--shadow, rgba(0, 0, 0, 0.2));
   background-color: transparent;
-  margin-top: 60px; /* <-- Ajoutez cette ligne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
 }
 
+.image-container img:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 15px 40px var(--shadow-hover, rgba(0, 0, 0, 0.3));
+}
+
 .social-links {
-  text-align: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .social-links a {
-  display: inline-block;
-  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color, #30D5C8);
   text-decoration: none;
-  color: #007bff;
+  color: #ffffff;
   font-size: 1.5rem;
-  transition: color 0.3s, transform 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px var(--shadow, rgba(0, 0, 0, 0.2));
 }
 
 .social-links a:hover {
-  color: #0056b3;
-  transform: scale(1.1);
+  background-color: var(--secondary-color, #1E8D89);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 16px var(--shadow-hover, rgba(0, 0, 0, 0.3));
 }
 
-/* Réactivité */
+.resume-button {
+  margin-top: 20px;
+  animation: fadeInLeft 1.2s ease-out;
+}
+
+.btn-resume {
+  background-color: var(--primary-color, #30D5C8);
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow, rgba(0, 0, 0, 0.2));
+}
+
+.btn-resume:hover {
+  background-color: var(--secondary-color, #1E8D89);
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 8px 20px var(--shadow-hover, rgba(0, 0, 0, 0.3));
+}
+
+.btn-resume:active {
+  transform: scale(0.98);
+}
+
+/* Réactivité pour tablettes */
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .text-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .text-container p {
+    font-size: 1.1rem;
+  }
+
+  .image-container img {
+    max-width: 340px;
+  }
+}
+
+/* Réactivité pour mobiles */
 @media (max-width: 768px) {
   .home-container {
-      flex-direction: column;
-      padding: 20px;
-      height: auto;
+    flex-direction: column;
+    padding: 20px;
+    min-height: auto;
+    gap: 20px;
   }
 
   .text-container,
   .image-container {
-      flex: none;
-      width: 100%;
-      padding: 10px;
-  }
-
-  .text-container h1 {
-      font-size: 2rem;
-  }
-
-  .text-container p {
-      font-size: 1rem;
-  }
-
-  .image-container {
-      order: 2; /* Afficher l'image après le texte */
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
   }
 
   .text-container {
-      order: 1; /* Afficher le texte avant l'image */
+    order: 2;
+    text-align: center;
   }
-}
 
-@media (max-width: 480px) {
+  .image-container {
+    order: 1;
+  }
+
   .text-container h1 {
-      font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .text-container p {
-      font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .image-container img {
+    max-width: 300px;
   }
 
   .social-links a {
-      font-size: 1.2rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .btn-resume {
+    padding: 10px 25px;
+    font-size: 16px;
   }
 }
-.resume-button {
-  margin-top: 20px;
+
+/* Réactivité pour petits mobiles */
+@media (max-width: 480px) {
+  .home-container {
+    padding: 15px;
+  }
+
+  .text-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .text-container p {
+    font-size: 0.95rem;
+  }
+
+  .image-container img {
+    max-width: 260px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .btn-resume {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }
 
-.btn-resume {
-  background-color: #30D5C8; /* Bleu attractif */
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-resume:hover {
-  background-color: #30D5C8; /* Changement de couleur au survol */
-  transform: scale(1.05); /* Agrandissement léger au survol */
-}
-
-.btn-resume:active {
-  background-color: #30D5C8;
-  transform: scale(1); /* Reset de l'agrandissement lors du clic */
-}
 
