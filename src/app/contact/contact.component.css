@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 80px);
-    padding: 40px 20px;
+    padding: 40px;
     background-color: var(--bg-color, #f9f9f9);
     animation: fadeIn 2s ease-out;
     transition: background-color 0.3s ease;
@@ -36,7 +36,7 @@ body.dark-mode .contact-container {
 
 .contact-info {
     width: 100%;
-    max-width: 700px;
+    max-width: 1200px;
     min-height: 400px;
     background-color: var(--card-bg, #ffffff);
     border: 2px solid var(--primary-color, #30D5C8);
@@ -171,7 +171,7 @@ body.dark-mode .contact-info li:hover {
 /* Responsivité pour tablettes */
 @media (max-width: 1024px) {
     .contact-info {
-        max-width: 600px;
+        max-width: 90%;
         padding: 35px 25px;
     }
 
