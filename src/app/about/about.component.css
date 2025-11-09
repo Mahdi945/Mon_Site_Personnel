@@ -74,16 +74,25 @@ body.dark-mode .about-container {
 /* Carousel des skills */
 .skills-carousel {
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   position: relative;
   background: linear-gradient(90deg, var(--bg-color, #f0f0f0) 0%, transparent 10%, transparent 90%, var(--bg-color, #f0f0f0) 100%);
   padding: 20px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.skills-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .skills-track {
   display: flex;
   animation: scroll 30s linear infinite;
   width: fit-content;
+  will-change: transform;
 }
 
 @keyframes scroll {
@@ -348,10 +357,20 @@ a:hover {
     margin-bottom: 30px;
   }
 
+  .skills-carousel {
+    overflow-x: auto;
+    padding: 20px 10px;
+  }
+
+  .skills-track {
+    animation: scroll 35s linear infinite;
+  }
+
   .skill-item {
     min-width: 110px;
     margin: 0 10px;
     padding: 18px 12px;
+    flex-shrink: 0;
   }
 
   .skill-item i {
@@ -360,10 +379,6 @@ a:hover {
 
   .skill-item span {
     font-size: 0.85rem;
-  }
-
-  .skills-track {
-    animation: scroll 25s linear infinite;
   }
 }
 
@@ -379,10 +394,20 @@ a:hover {
     margin-bottom: 20px;
   }
 
+  .skills-carousel {
+    overflow-x: auto;
+    padding: 20px 5px;
+  }
+
+  .skills-track {
+    animation: scroll 40s linear infinite;
+  }
+
   .skill-item {
     min-width: 90px;
     margin: 0 8px;
     padding: 15px 10px;
+    flex-shrink: 0;
   }
 
   .skill-item i {
